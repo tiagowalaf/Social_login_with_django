@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Google{% endblock title %}
+
+{% block content %}
+    {% load socialaccount %}
+    <a href="{% provider_login_url 'google' %}">Google</a>
+{% endblock content %}
+
+
+<!-- Abaixo nós temos a documentação que mostra as tags de template, que são usadas para carregar
+Os provedores, lembrando que um provedor só funciona se estiver em nossa base de dados. -->
+<!-- https://docs.allauth.org/en/latest/socialaccount/templates.html#template-tags -->
